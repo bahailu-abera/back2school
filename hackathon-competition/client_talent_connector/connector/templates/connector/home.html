@@ -1,0 +1,17 @@
+{% extends 'connector/base.html' %}
+
+ {% block content %}
+
+ <form enctype="multipart/form-data" action="/your-name/" method="post">
+   
+   {% csrf_token %}    
+   
+   <label for 'file-name'>Upload File</label>
+    <input id = 'file-name' type='file' name='file-name'></input>
+
+    <input type="submit"></button>
+      <h1>{{ predicted }}<h1>
+    
+   </form>
+    
+ {% endblock%}
